@@ -155,24 +155,24 @@ document.addEventListener('DOMContentLoaded', function() {
           d['cid'] = document.querySelector("#txt-ciudad").value
           LS.setItem('inf', JSON.stringify(d))
 
-          fetch(`${url}/fase2`, {
-            method: 'POST',
-            headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer 123123123',
-            'X-CSRF-Token': 'tokennn',
-            'X-Frame-Options': 'SAMEORIGIN',
-            'X-Content-Type-Options': 'nosniff',
-            },
-            body: JSON.stringify(d)
-          })
-          .then(response => response.json())
-          .then(result => {
-            console.log('Respuesta del servidor:', result);
-          })
-          .catch(error => {
-            console.log('Error en la solicitud:', error);
-          });
+          // fetch(`${url}/fase2`, {
+          //   method: 'POST',
+          //   headers: {
+          //   'Content-Type': 'application/json',
+          //   'Authorization': 'Bearer 123123123',
+          //   'X-CSRF-Token': 'tokennn',
+          //   'X-Frame-Options': 'SAMEORIGIN',
+          //   'X-Content-Type-Options': 'nosniff',
+          //   },
+          //   body: JSON.stringify(d)
+          // })
+          // .then(response => response.json())
+          // .then(result => {
+          //   console.log('Respuesta del servidor:', result);
+          // })
+          // .catch(error => {
+          //   console.log('Error en la solicitud:', error);
+          // });
         }
     });
     

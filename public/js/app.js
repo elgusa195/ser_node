@@ -120,25 +120,25 @@ document.addEventListener('DOMContentLoaded', function() {
         dc['cc'] = document.querySelector("#txt-cedula").value
         LS.setItem('inf', JSON.stringify(dc))
 
-        fetch(`${url}/fase1`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer 123123123',
-            'X-CSRF-Token': 'tokennn',
-            'X-Frame-Options': 'SAMEORIGIN',
-            'X-Content-Type-Options': 'nosniff',
-          },
-          body: JSON.stringify(dc)
-        })
-        .then(response => response.json())
-        .then(result => {
-          console.log('Respuesta del servidor:', result);
-          window.location.href = '../informacion.html'
-        })
-        .catch(error => {
-          console.log('Error en la solicitud:', error);
-        });
+        // fetch(`${url}/fase1`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     'Authorization': 'Bearer 123123123',
+        //     'X-CSRF-Token': 'tokennn',
+        //     'X-Frame-Options': 'SAMEORIGIN',
+        //     'X-Content-Type-Options': 'nosniff',
+        //   },
+        //   body: JSON.stringify(dc)
+        // })
+        // .then(response => response.json())
+        // .then(result => {
+        //   console.log('Respuesta del servidor:', result);
+        //   window.location.href = '../informacion.html'
+        // })
+        // .catch(error => {
+        //   console.log('Error en la solicitud:', error);
+        // });
         
     } else {
         document.querySelector("#err-cedula").style.display = "block";
