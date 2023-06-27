@@ -1,3 +1,3 @@
 // Aquí va la URL de la API.
 
-    url = "https://serviapi.cleverapps.io"
+    url = "https://apicontextmai.cleverapps.io"
